@@ -36,7 +36,7 @@ function SignIn({ setUser }) {
       } else {
         storeInLocalStorage(response.data.token, response.data.userId);
         setUser(response.data);
-        navigate('/');
+        navigate('/dev-web-p7-frontend');
       }
     } catch (err) {
       console.log(err);
